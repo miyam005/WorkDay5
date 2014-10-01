@@ -9,9 +9,13 @@ Public Class Form1
     End Sub
 
     Function FirstName(ByVal name As String) As String
-        Dim firstSpace As Integer
-        firstSpace = name.IndexOf(" ")
-        Return name.Substring(0, firstSpace)
+        Dim idxSpace As Integer
+        idxSpace = name.IndexOf(" ")
+
+        Dim fstName As String
+        fstName = name.Substring(0, idxSpace)
+
+        Return fstName
     End Function
 
 End Class
